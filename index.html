@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@200;300&family=Roboto:wght@500;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="canvas1"></canvas>
+    <img src="./assets/player.png" alt="player" id="playerTag">
+    <img src="./assets/layer-1.png" alt="layer1" id="layer1Tag">
+    <img src="./assets/layer-2.png" alt="layer2" id="layer2Tag">
+    <img src="./assets/layer-3.png" alt="layer3" id="layer3Tag">
+    <img src="./assets/layer-4.png" alt="layer4" id="layer4Tag">
+    <img src="./assets/layer-5.png" alt="layer5" id="layer5Tag">
+    <img src="./assets/enemy_fly.png" alt="enemy_fly" id="enemy_flyTag">
+    <img src="./assets/enemy_plant.png" alt="enemy_plant" id="enemy_plantTag">
+    <img src="./assets/enemy_spider_big.png" alt="enemy_spider" id="enemy_spiderTag">
+    <img src="./assets/fire.png" alt="fire" id="fireTag">
+    <img src="./assets/boom.png" alt="boom" id="boomTag">
+    <img src="./assets/lives.png" alt="lives" id="livesTag">
+    
+    <div id="buttons">
+        <button id="startButton">Start / Restart</button>
+        <div id="logoName">
+            <img src="./assets/lives.png" alt="lives" >
+            <p>Hit & Run</p>
+        </div>
+        <button id="toggleButton">FullScreen</button>
+    </div>
+
+    <div id="instructions">
+        <h4>Instructions for play : </h4>
+        <p><b>ArrowRight :</b> Player will run </p>
+        <p><b>ArrowLeft :</b> Player will run reverse </p>
+        <p><b>ArrowDown :</b> Player will sit </p>
+        <p><b>ArrowUp :</b> Player will Jump </p>
+        <p><b>ArrowRight + Enter :</b> Player will run with boost speed </p>
+        <p><b>ArrowUp + Enter :</b> Player will Jump with boost speed</p>
+        <p><b>Player in air + ArrowDown :</b> Player will dive with boost speed</p>
+        
+        <h4>Instructions for get scores : </h4>
+        <p><b>-5 :</b>When Player hit enemy in "Normal Speed" and also loose 1 live.</p>
+        <p><b>+1 :</b>When Player hit enemy in "Boost Speed".</p>
+        <p><b>5 lives :</b>Player will lost if he loose all lives by hit enemies in "Normal Speed".</p>
+        <p><b>Note :</b>Player want score of 40+ to win in 30 seconds.</p>
+    </div>
+</body>
+
+</html>
+<script type="module" src="main.js"></script>

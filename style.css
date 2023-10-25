@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#canvas1{
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    max-height: 100%;
+    font-family: "Creepster",cursive;
+}
+#livesTag,#boomTag,#fireTag,#playerTag,#layer1Tag,#layer2Tag,#layer3Tag,#layer4Tag,#layer5Tag,#enemy_spiderTag,#enemy_flyTag,#enemy_plantTag{
+    display: none;
+}
+#buttons{
+    width: 40%;
+    height: 100px;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#startButton, #toggleButton{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px 8px;
+    color: white;
+    border-radius: 6px;
+    border: none;
+}
+#instructions{
+    background-color: aliceblue;
+    width: 220px;
+    font-size: 19px;
+    margin-left: 10px;
+    padding: 10px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+#logoName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logoName>p{
+    font-family: "Creepster",cursive;
+    font-weight: bold;
+    font-size: 24px;
+}
